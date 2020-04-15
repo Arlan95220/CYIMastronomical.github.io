@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>中原大學天文社</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+	<!--下拉表單-->
+	$(document).ready(function(){
+	 $("#bu").click(function(){
+	 $(".up").toggle();
+	 });
+	});
+	<!--音樂播放器-->
+	function playPause() {
+	   var music = document.getElementById('music');
+	   var music_btn = document.getElementById('musicop');
+	   if (music.paused){
+	       music.play();
+	       music_btn.src = 'image/open.png';
+	   }
+	   else{
+	       music.pause();
+	       music_btn.src = 'image/close.png'; 
+	   }
+	}   
+	</script>
+	<style>
+	body {
+	   background-size: cover;
+	   margin-bottom: -20px;
+	   background-attachment: fixed;
+
+	}
+	.bob {
+	   background: #FFFFFF;
+	   opacity: 0.95;
+	   margin-right: 15%;
+	   margin-left: 15%;
+	   margin-top: 5%;
+	   padding-left: 3%;
+	   padding-right: 3%;
+	   padding-top: 1%;
+	   padding-bottom: 3%;
+	   border-style: solid;
+	   border-color: #E0E0E0a2;
+	   border-width: 8px;
+	   box-shadow: 0px 0px 15px 8px white;
+	   animation:downing 3s;
+	}
+	nav {
+	   background: linear-gradient(to bottom, snow, #9D9D9D);
+	   margin-left: -1%;
+	   margin-right: -0.6%;
+	   margin-top: -1.5%;
+	   margin-bottom: 2%;
+	   padding-top: 1%;
+	   box-shadow: 0px 0px 15px 8px black;
+	}
+	footer {
+	   background: linear-gradient(to top, snow, #9D9D9D);
+	   box-shadow: 0px 0px 15px 8px black;
+	   margin-right: -0.6%;
+	   margin-left: -0.6%;
+	   margin-top: 6%;
+	   padding-top: 3%;
+	   padding-bottom: 4%;
+	   text-align: center;
+	   font-size: 18px;
+	   font-style: italic;
+	   font-weight: bold;
+	}
+	.totheo {
+	   position: fixed;
+	   right: 20px;
+	   top: 62%;
+	   animation:car 2s;
+	}
+	.totheoII {
+	   position: fixed;
+	   right: 20px;
+	   top: 70%;
+	   animation:car 3s;
+	}
+	.up {
+	   display: none;
+	   background: #3C3C3C;
+	   position: fixed;
+	   right: 60px;
+	   top: 70%;
+	   border: 2px solid white;
+	}
+	.upt {
+	   width: 100%;
+	   padding-left: 20px;
+	   padding-right: 20px;
+	   padding-top: 1%;
+	   padding-bottom: 1%;
+	   text-align: content;
+	   border-top: 2px solid #272727;
+	}
+	h1 {
+	   color: black;
+	   text-shadow: 2px 2px 3px #ECECFF;
+	   font-family: KouzanMouhituFontOTF;
+	   font-size: 54px;
+	   padding: 3%;
+	   padding-left: 80px;
+	   margin-top:25px;
+	   animation:nave1 3s,nave2 3s 3s;
+
+	}
+	@font-face {
+	   font-family: KouzanMouhituFontOTF;
+	   src: url("font/KouzanMouhituFontOTF.otf");
+	}
+	@font-face {
+	   font-family: Mamelon;
+	   src: url("font/Mamelon.otf");
+	}
+	.topa {
+	   font-size: 28px;
+	   color: black;
+	   font-family: KouzanMouhituFontOTF;
+	   animation:nave1 3s,nave2 3s 3s;
+	}
+	.topa:hover {
+	   color: #84C1FF;
+	   font-size: 36px;
+	}
+	a {
+	   font-size: 22px;
+	   font-weight: bolder;
+	   text-decoration: none;
+	   color: snow;
+	}
+	.into {
+	   width: 36px;
+	}
+	.titleII {
+	   margin-top: 5px;
+	   font-size: 40px;
+	   font-weight: bolder;
+	   font-family: "標楷體";
+	}
+	iframe {
+	   float: right;
+	   margin-bottom: 1%;
+	   margin-left: 50px;
+	   margin-top:20px;
+	   animation:downingimg 2s;
+	}
+	p {
+	animation:nave1 3s,nave2 3s 3s;
+	   font-size: 16px;
+	}
+	blockquote {
+	   line-height: 1.5em;
+	   font-size: 17px;
+	   animation:nave1 3s,nave2 3s 3s;
+	}
+	.ba {
+	   width: 100px;
+	   padding: 5px;
+	   border-radius: 40px 10px;
+	   background: #B15BFF;
+	   color: snow;
+	   float: right;
+	   font-size: 16px;
+	}
+	.study {
+	   font-size:108px;
+	   border: 20px solid transparent;
+	   border-image: url("image/border.png") 40% round;
+	   font-family: KouzanMouhituFontOTF;
+	   padding-top:30px;
+		text-align:center;
+	   padding-bottom:30px;
+	   background-image: url("image/1.jpg");
+	   background-size:cover;
+	   color:rgba(255, 0, 0, 0);
+	   
+	}
+	.study:hover 
+	{
+	color:black;
+	background-color: snow;
+	background-image: url("");
+	}
+	
+	.happ {
+	   border-radius: 50%;
+	   width: 200px;
+	   height: 200px;
+	}
+	topi:hover {
+	   visibility: visible;
+	}
+	.bigimg:hover {
+	   width: 50%;
+	}
+	.three
+	{
+		columns:3;
+	}
+	 
+@keyframes downing
+{
+ from 
+ {
+ color:rgba(255, 0, 0, 0);
+ background:rgba(255, 0, 0, 0);
+ border-style: solid;
+ border-color: rgba(255, 0, 0, 0);
+	box-shadow: 0px 0px 15px 8px rgba(255, 0, 0, 0);
+	margin-top:-50px;
+ }
+ to { }
+ } 
+ 
+ @keyframes downingimg
+ {
+  from 
+ {
+ opacity: 0.1;
+ margin-top:-50px;
+ }
+ to {}
+ }
+ 
+  @keyframes car
+ {
+  from {
+ top:0;
+ }
+ to {}
+ }
+ 
+   @keyframes nave1
+ {
+  from 
+ {
+	color:rgba(255, 0, 0, 0);
+	text-shadow: 2px 2px 3px rgba(255, 0, 0, 0);
+ }
+ to {color:rgba(255, 0, 0, 0);
+ text-shadow: 2px 2px 3px rgba(255, 0, 0, 0);
+ }
+ }
+ 
+    @keyframes nave2
+ {
+  from 
+ {
+ color:rgba(255, 0, 0, 0);
+ text-shadow: 2px 2px 3px rgba(255, 0, 0, 0);
+ }
+ to {}
+ }
+ img
+ {
+ animation:downingimg 3s;
+ }
+ 
+	</style>
+</head>
+<body background="image/star.jpg">
+	<nav>
+		<table style="padding-bottom:10px;" width="100%">
+			<tr>
+				<td rowspan="2">
+					<img src="image/out.png" style="position:absolute;width:550px;">
+					<h1>中原大學天文社</h1>
+				</td>
+				<td align="right" style="padding-right:5px;" valign="top">
+					<a href="https://www.facebook.com/cycuastro/"><img alt="Face Book" class="into" src="image/fb.png"></a>
+					<a href="https://reurl.cc/rxLxyZ"><img alt="Instagram " class="into" src="image/ig.png"></a>
+				</td>
+			</tr>
+			<tr>
+				<td align="right" style="padding-right:25px;" valign="bottom">
+					<a class="topa" href=""><span class="topi"><img src="image/t1.png" style="position:absolute; top:100px;padding:7px; visibility:hidden;"></span>首頁&nbsp;|&nbsp;</a> <a class="topa" href="">參觀訊息&nbsp;|&nbsp;</a> <a class="topa" href="">活動相關&nbsp;|&nbsp;</a> <a class="topa" href="">天文科普&nbsp;|&nbsp;</a> <a class="topa" href="">組員介紹</a>
+				</td>
+			</tr>
+		</table>
+	</nav>
+	<div class="bob"><a href name="about"></a>
+		<p><iframe allowfullscreen frameborder="0" height="360px" src="http://www.youtube.com/embed/uq2RBrjP3KQ" width="58%"></iframe> <span class="titleII">關於我們</span><br></p>
+		<blockquote>
+			社辦位置&nbsp;:&nbsp;&nbsp;中原大學-科學館9F<br>
+			成立時間&nbsp;:&nbsp;&nbsp;西元1971年10月28日<br>
+			社課時間&nbsp;:&nbsp;&nbsp;定期週四舉行<br>
+			&nbsp;&nbsp;天文台即社辦!!<br>
+			&nbsp;&nbsp;位於科學館樓頂獨立房間(相當於9F)及天文台(相當於10F)提供社團社員交流使用。<br>
+			&nbsp;&nbsp;天文臺為口徑30公分的蓋賽格林式天文望遠鏡，平時作為教學觀測外，並會定期開放民眾上來參觀 致力於「與天文同好交流」、「天文推廣普及」、「開放天文臺服務大眾」及「研究天文攝影」。
+			<p></p>
+		</blockquote>
+		<table width="100%">
+			<tr>
+				<td align="right"><img class="bigimg" src="image/1.jpg" width="15%"> <img class="bigimg" src="image/1.jpg" width="15%"> <img class="bigimg" src="image/1.jpg" width="15%"> <img class="bigimg" src="image/1.jpg" width="15%"></td>
+			</tr>
+		</table>
+	</div>
+	<div class="bob" style="padding-bottom:70px;">
+	<a href name="day"></a>
+	<p class="titleII">行事曆</p><img src="image/day.png" width="100%">
+	</div>
+	<div class="bob" style="padding-bottom:70px;">
+	<a href name="join"></a>
+		<p class="titleII">參觀訊息</p><img src="image/1.jpg" style="float: left; padding-right:80px;" width="400px">
+		<ul type="none">
+			<li>
+				<p style="font-size:22px;">✯ 當季星空導覽與解說</p><br>
+			</li>
+			<li>
+				<p style="font-size:22px;">✯ 使用天文台設備觀測天體</p><br>
+			</li>
+			<li>
+				<p style="font-size:22px;">✯ 天文臺設備解說</p><br>
+			</li>
+		</ul><input class="ba" onclick="javascript:location.href='###'" type="button" value="more">
+	</div>
+	<div class="bob"><a href name="happen"></a>
+		<p class="titleII">活動相關</p>
+		<table width="100%">
+			<tr>
+				<td align="center">
+					<a href="#"><img class="happ" src="image/1.jpg"><br>
+					<br>
+					<span style="color:black;">stra party</span></a>
+				</td>
+				<td align="center">
+					<a href="#"><img class="happ" src="image/1.jpg"><br>
+					<br>
+					<span style="color:black;">鹿林天文台參訪</span></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="bob" ><a href name="what"></a>
+		<p class="titleII"style="margin-bottom:15px;">天文科普</p>
+		<div class="three">
+						<div class="study">月蝕</div>
+						<div class="study">月蝕</div>
+						<div class="study">月蝕</div>
+		</div>
+		<br>
+		<input class="ba" onclick="javascript:location.href='###'" type="button" value="more"><br>
+		
+	</div>
+	<div class="totheo">
+		<audio autoplay="autoplay" id="music" loop="loop" src="music/RSS.mp3"></audio> <a href="javascript:playPause();"><img id="musicop" src="image/open.png" style="box-shadow: 2px 2px 8px 1px black;width:45px;height:45px; background-size:43px 43px;"></a><br>
+	</div>
+	<div class="totheoII">
+		<button id="bu" style="background-image:url(image/down.png);box-shadow: 2px 2px 8px 1px black;width:45px;height:45px; background-size:43px 43px;" type="button">
+		<table class="up">
+			<tr>
+				<td class="upt" style="border-top:none;">
+					<a href="#about" style="font-size:20px;text-shadow:1px 1px black; color:#D0D0D0;">關於我們</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="upt">
+					<a href="#day" style="font-size:20px;text-shadow:1px 1px black; color:#D0D0D0;">行事曆</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="upt">
+					<a href="#join" style="font-size:20px;text-shadow:1px 1px black; color:#D0D0D0;">參觀訊息</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="upt">
+					<a href="#happen" style="font-size:20px;text-shadow:1px 1px black; color:#D0D0D0;">活動相關</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="upt">
+					<a href="#what" style="font-size:20px;text-shadow:1px 1px black; color:#D0D0D0;">天文科普</a>
+				</td>
+			</tr>
+		</table></button>
+	</div>
+	<footer>
+		&copy;CYIM多媒體期中第五組
+	</footer>
+</body>
+</html>
