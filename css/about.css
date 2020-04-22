@@ -1,0 +1,17 @@
+
+	iframe {
+	   float: right;
+	   margin-bottom: 1%;
+	   margin-left: 50px;
+	   margin-top:20px;
+	   animation:downingimg 2s;
+	}
+	blockquote {
+	   line-height: 1.5em;
+	   font-size: 17px;
+	   animation:nave1 3s,nave2 3s 3s;
+	   font-family:"微軟正黑體";
+	}
+		.bigimg:hover {
+	   width: 50%;
+	}

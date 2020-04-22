@@ -1,0 +1,73 @@
+    p
+    {
+      font-family: KouzanMouhituFontOTF;
+      color: #003D79;
+      font-size: 45px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 2px;
+      text-shadow: 10px 10px 20px #005AB5;
+    }
+    hr
+    {
+      border: 0;
+      height: 1.2px;
+      background: #003D79;
+      background-image: linear-gradient(to right, #D2E9FF, #003D79, #D2E9FF);
+    }
+    table
+    {
+      margin-left: auto;
+      margin-right: auto;
+    }
+	.bob
+    {
+      font-family: KouzanMouhituFontOTF;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 2px;
+      text-shadow: 10px 10px 20px #005AB5;
+    }
+
+    .a
+    {
+      font-family: KouzanMouhituFontOTF;
+      color: #003D79;
+      font-size: 25px;
+      letter-spacing: 2px;
+      padding: 10px;
+	  padding-bottom:20px;
+    }
+    .b
+    {
+      background-color: #D2E9FF;
+      padding: 10px;
+    }
+    .c
+    {
+      font-family: KouzanMouhituFontOTF;
+      text-align: center;
+      letter-spacing: 2px;
+      vertical-align: middle;
+      color: #003D79;
+      padding: 10px 8px;
+
+    }
+    .d
+    {
+      font-family: KouzanMouhituFontOTF;
+      font-size:24px;
+      text-align: center;
+      color: white;
+      background-color: #2894FF; 
+      border-style: solid;
+      border-color: #2894FF;
+      border-width: 10px; 
+      margin-right: 30px; 
+    }
+	.g
+	{
+	padding-left:8px;
+	padding-right:8px;
+	}
